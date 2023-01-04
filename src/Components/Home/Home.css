@@ -14,6 +14,12 @@
     border-radius: 10px;
     box-shadow: 0 0 10px #ccc;
     cursor: pointer;
+    text-decoration: none;
+
+}
+.blog-preview:hover{
+    text-decoration: none;
+    box-shadow: 0 0 10px #000;
 
 }
 .blog-preview h2{
@@ -22,6 +28,7 @@
     font-weight: 500;
     margin: 0;
     padding: 5px;
+    text-decoration: none;
 }
 .blog-preview p{
     font-size: 1.2rem;
