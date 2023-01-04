@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Maaloum Blog
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Maaloum Blog is a a React  SPA application that allows users to view and interact with blog posts and to add new posts.
+> It fetchs all the information that it displays using a local API creates with JSON server.
+> the app allows users to add a new post, gives a post details and allows deleting a post.
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+## Built With
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- JavaScript
+- CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Dev Dependencies
 
-### `npm test`
+- React-routerDOM
+- JSON Server
+- React Hooks
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Live Demo
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- live demo: [Click here](.)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Video Link
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Click here](https://drive.google.com/file/d/1okzf6kBq-Jix3BmyIUbk_iKrl_v4HzXz/view?usp=sharing)
 
-### `npm run eject`
+## Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To get a local copy up and running follow these simple steps:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Copy this link `https://github.com/maaloum/Blog-with-react.git`.
+- Get the directory that you want to clone the repository.
+- Open the command prompt in this directory.
+- Write `git clone https://github.com/maaloum/Blog-with-react.git`.
+- Go to the repository folder in your command prompt, run `cd name-of-folder`.
+- Run `npm install`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Build
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Type these commands into the terminal:
 
-## Learn More
+- npm run build
+- Open dist/index.html in your web browser.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Run the application in local environment
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Type this command in your terminal
 
-### Code Splitting
+- npm run start
+- Your web browser will open on localhost
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Run tests
 
-### Analyzing the Bundle Size
+Type this command into the terminal:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- npm run test
 
-### Making a Progressive Web App
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+👤 **Ely Cheick Maaloum**
 
-### Advanced Configuration
+- GitHub: [@Maaloum](https://github.com/maaloum)
+- LinkedIn: [maaloum](https://www.linkedin.com/in/ely-cheikh-maaloum-075a79135/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🤝 Contributing
 
-### Deployment
+Contributions, [issues](https://github.com/yasinabdmahmood/Country-facts/issues), and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Show your support
 
-### `npm run build` fails to minify
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📝 License
+
+This project is not licensed.
