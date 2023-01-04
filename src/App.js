@@ -14,15 +14,9 @@ function App() {
           <Navbar />
             <Routes>
               <Route path='/' exact element={<Home />} />
-            </Routes>
-            <Routes>
               <Route path='/newblog' exact element={<NewBlog />} />
-            </Routes>
-            <Routes>
-              <Route path='/blogs/:id' exact element={<BlogDetails />} />
-            </Routes>
-            <Routes>
-              <Route path='/*' element={<NotFound/>} />
+             <Route path='/blogs/:id' exact element={<BlogDetails />} />
+              <Route path='*' exact element={<NotFound />}/>
             </Routes>
 
         </div>
