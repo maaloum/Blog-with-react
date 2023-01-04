@@ -28,7 +28,7 @@ function BlogDetails() {
 
       })
     }, 500)
-  }, [])
+  }, [id])
 
   const handleClick = () => {
     fetch('http://localhost:8000/blogs/' + blogs.id, {
