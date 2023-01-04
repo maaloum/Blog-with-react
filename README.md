@@ -21,7 +21,7 @@
 
 ## Live Demo
 
-- live demo: [Click here](.)
+- live demo: [Click here](https://main--super-paletas-b4ba8a.netlify.app/)
 
 ### Video Link
 
