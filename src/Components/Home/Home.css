@@ -14,9 +14,10 @@
     border-radius: 10px;
     box-shadow: 0 0 10px #ccc;
     cursor: pointer;
+
 }
 .blog-preview h2{
-    color: rgb(12, 255, 122);;
+    color:rgb(71, 218, 137);
     font-size: 2rem;
     font-weight: 500;
     margin: 0;
@@ -27,6 +28,9 @@
     font-weight: 300;
     margin: 0;
     padding: 3px;
+}
+a{
+    text-decoration: none;
 }
 .blog-body{
     width: 100%;
@@ -45,4 +49,12 @@
     cursor: pointer;
     margin: 10px 0;
     width: 150px;
+}
+.empty{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #ccc;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }

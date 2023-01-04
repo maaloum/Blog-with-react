@@ -1,0 +1,48 @@
+.newBlog{
+    margin: 20px auto;
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 3px #ccc;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+form{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 8, 8);
+    border-radius: 5px;
+    background-color: rgb(113, 110, 205);
+    color: rgb(251, 246, 246);
+    font-weight: bold;
+    cursor: pointer;
+}

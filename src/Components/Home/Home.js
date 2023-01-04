@@ -1,30 +1,37 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import BlogList from '../Blog/BlogList'
 import'./Home.css'
 
 export default function Home() {
-  const [blogs, setBlog]= useState([
-    {
-      title: 'My first blog',
-      body: 'lorem ipsum...',
-      id: 1},
-    {
-      title: 'My second blog',
-      body: 'lorem ipsum...',
-      id: 2},
-    {
-      title: 'My third blog',
-      body: 'lorem ipsum...',
-      id: 3},
+  const [blogs, setBlog]= useState( null)
+  const[isLoading, setisLoading] = useState(true)
+  const[messageError, setMessageError] =useState('')
+  useEffect((blog) => {
+    setTimeout(()=> {
+      fetch('http://localhost:8000/blogs')
+      .then(res => {
+        if(!res.ok){
+          throw Error('We could not fetch the data for that resource!')
+        }
+        return res.json()
+      })
+      .then(data =>
+        {setBlog(data)
+        setisLoading(false)
+      })
+      .catch(error => {
+        console.log(error.message)
+        setMessageError(error.message)
+        setisLoading(false)
 
-  ])
-  const handleDeletBlog = (blog) =>{
-    const newBlog = blogs.filter((b) => b.id !== blog.id)
-    setBlog(newBlog)
-  }
+      })
+    }, 500)
+  }, [])
   return (
     <div className='home'>
-     <BlogList blogs ={blogs} handleDeletBlog= {handleDeletBlog}/>
+      {isLoading && <p>Loading ...</p>}
+      {messageError && <p>{messageError}</p>}
+     {blogs && <BlogList blogs ={blogs}/>}
     </div>
   )
 }

@@ -1,0 +1,21 @@
+article{
+    margin: 20px auto;
+    width: 80%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ddd;
+    margin-bottom: 20px;
+}
+article h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color:rgb(71, 218, 137);
+    text-align: center;
+}
+article p{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}

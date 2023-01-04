@@ -1,0 +1,28 @@
+{
+  "blogs": [
+    {
+      "title": "React-Redux",
+      "body": "react-redux is a library that provides React bindings for the Redux state management library. It allows you to use Redux in your React apps by providing a way to connect your React components to the Redux store and dispatch actions.",
+      "auther": "Maaloum",
+      "id": 1
+    },
+    {
+      "title": "JSON server",
+      "body": "JSON Server is a simple tool that allows you to create a fake REST API by defining the endpoints and the data in a JSON file. It is often used for prototyping or as a way to mock a back-end server during the development of a front-end application.",
+      "auther": "Cheick Tourad",
+      "id": 2
+    },
+    {
+      "title": "useNavigate Hook",
+      "body": "The useNavigate hook is a function that is part of the @reach/router library in React. It allows you to navigate to a new location in your application programmatically, by calling the navigate function that is returned by the hook.",
+      "auther": "Jar Rassoul",
+      "id": 3
+    },
+    {
+      "title": "useParams hook",
+      "body": "useParams is a hook in the react-router-dom library that allows a functional component to access the dynamic pieces of the URL in a React app. It is a way to get access to the parameters in the URL that are being used to render a particular route.\n\nTo use useParams, you will need to import it from react-router-dom and then call it inside your functional component. It returns an object containing the key-value pairs of the dynamic segments of the URL that is being used to render the current route",
+      "auther": "Maaloum",
+      "id": 4
+    }
+  ]
+}
