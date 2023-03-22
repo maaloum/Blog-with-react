@@ -11,7 +11,7 @@ export default function NewBlog() {
   const handleSubmit = (e) => {
     e.preventDefault()
     const blog = {title, body, auther}
-    fetch('http://localhost:8000/blogs', {
+    fetch('http://localhost:3001/blogs', {
       method: 'POST',
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify(blog)
@@ -32,7 +32,7 @@ export default function NewBlog() {
         <textarea required name='body' value={body} onChange={(e)=> setBody(e.target.value)}></textarea>
         <label>Blog Author:</label>
         <input type='text' required name='author' value={auther} onChange={(e) => setAuthor(e.target.value)}/>
-        <button>Add Blog</button>
+        <button >Add Blog</button>
       </form>
     </div>
   )

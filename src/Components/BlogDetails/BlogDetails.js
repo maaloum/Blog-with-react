@@ -5,13 +5,14 @@ import './BlogDetails.css'
 
 function BlogDetails() {
   const {id} = useParams()
+  console.log(id)
   const [blogs, setBlog]= useState( null)
   const[isLoading, setisLoading] = useState(true)
   const[messageError, setMessageError] =useState('')
   const navigate = useNavigate()
   useEffect((blog) => {
     setTimeout(()=> {
-      fetch('http://localhost:8000/blogs/' + id)
+      fetch('http://localhost:3001/blogs/' + id)
       .then(res => {
         if(!res.ok){
           throw Error('We could not fetch the data for that resource!')
@@ -31,17 +32,27 @@ function BlogDetails() {
   }, [id])
 
   const handleClick = () => {
-    fetch('http://localhost:8000/blogs/' + blogs.id, {
-      method: 'DELETE'
-    })
+    console.log(id)
+    if(window.confirm("Do you want to detele this post")){
+    fetch('http://localhost:3001/blogs/' + id, 
+      {method: "DELETE"}).then(() =>{
+        console.log('blog deleted')
+        
+      }).catch(error => {
+        console.log(error.message)
+      })
+    
     navigate('/')
-  }
+  }}
 
+  const handleEdit = () => {
+    navigate('/edit/' + id)
+  }
 
 
   return (
     <div className='blog-details'>
-      {isLoading && <p>Loading ...</p>}
+      {isLoading && <p className='loading'>Loading ...</p>}
       {messageError && <p>{messageError}</p>}
       {blogs && (
         <article>
@@ -49,6 +60,7 @@ function BlogDetails() {
           <p>Written by : {blogs.auther}</p>
           <div className='blog-body'>{blogs.body}</div>
           <button className='deleteBlog' onClick={handleClick}>Delete Blog</button>
+          <button className='editBlog' onClick={handleEdit}>Edit Blog</button>
         </article>
       )}
     </div>

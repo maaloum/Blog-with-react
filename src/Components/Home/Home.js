@@ -6,9 +6,10 @@ export default function Home() {
   const [blogs, setBlog]= useState( null)
   const[isLoading, setisLoading] = useState(true)
   const[messageError, setMessageError] =useState('')
+  const[btnClear, setBtnClear] = useState('');
   useEffect((blog) => {
     setTimeout(()=> {
-      fetch('http://localhost:8000/blogs')
+      fetch('http://localhost:3001/blogs')
       .then(res => {
         if(!res.ok){
           throw Error('We could not fetch the data for that resource!')
@@ -27,11 +28,20 @@ export default function Home() {
       })
     }, 500)
   }, [])
+
+  const handleClearAll = () => {
+      
+if(window.confirm("Are you sure you want to delet all?")){ 
+        setBlog([])
+        setBtnClear('btnClear')}
+      
+  }
   return (
     <div className='home'>
-      {isLoading && <p>Loading ...</p>}
+      {isLoading && <p className='loading'> Loading ...</p>}
       {messageError && <p>{messageError}</p>}
      {blogs && <BlogList blogs ={blogs}/>}
+     {!isLoading && <button onClick={handleClearAll} className ={btnClear}>Delete All blogs</button>}
     </div>
   )
 }

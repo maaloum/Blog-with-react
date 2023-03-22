@@ -39,10 +39,10 @@ button{
     padding: 10px;
     margin: 10px 0;
     box-sizing: border-box;
-    border: 1px solid rgb(255, 8, 8);
+    border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: rgb(113, 110, 205);
-    color: rgb(251, 246, 246);
+    background-color: rgb(126, 128, 239);
+    color: #fff;
     font-weight: bold;
     cursor: pointer;
 }
