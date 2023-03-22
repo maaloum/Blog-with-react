@@ -6,7 +6,7 @@ export default function BlogList({blogs}) {
     <>
        {blogs.length >= 1 && blogs.map((blog) => (
         <div className='blog-preview' key={blog.id}>
-          <Link to= {`/blogs/${blog.id}`}>
+          <Link className='link' to= {`/blogs/${blog.id}`}>
             <h2>{blog.title}</h2>
             <p>Written by : {blog.auther}</p>
             <div className='blog-body'>{blog.body}</div>

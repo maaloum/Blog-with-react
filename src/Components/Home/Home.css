@@ -14,13 +14,11 @@
     border-radius: 10px;
     box-shadow: 0 0 10px #ccc;
     cursor: pointer;
-    text-decoration: none;
+    /* text-decoration: none; */
 
 }
-.blog-preview:hover{
+.link:hover{
     text-decoration: none;
-    box-shadow: 0 0 10px #000;
-
 }
 .blog-preview h2{
     color:rgb(71, 218, 137);
@@ -35,14 +33,16 @@
     font-weight: 300;
     margin: 0;
     padding: 3px;
+    color: rgb(241, 77, 12);
 }
 a{
     text-decoration: none;
 }
 .blog-body{
-    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin: 10px 0px;
 }
 
 .deleteBlog{

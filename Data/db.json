@@ -23,6 +23,12 @@
       "body": "useParams is a hook in the react-router-dom library that allows a functional component to access the dynamic pieces of the URL in a React app. It is a way to get access to the parameters in the URL that are being used to render a particular route.\n\nTo use useParams, you will need to import it from react-router-dom and then call it inside your functional component. It returns an object containing the key-value pairs of the dynamic segments of the URL that is being used to render the current route",
       "auther": "Maaloum",
       "id": 4
+    },
+    {
+      "title": "ChatGPT",
+      "body": "ChatGPT is a platform to search on",
+      "auther": "Lala Aicha",
+      "id": 5
     }
   ]
 }
